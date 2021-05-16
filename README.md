@@ -14,19 +14,19 @@ https://apps.apple.com/pl/app/zodiacally-birthday-manager/id1563743635?l=en
 
 
 ## Features
-- **Generator**
+- **Generator**\
 The generator is used to write programming code which can then be converted into a QR code. It is characterized by the fact that it automatically colors the syntax as you type - all thanks to Highlightr. The syntax highlighting is dependent on the selected language, which can be selected with the button in the NavigationBar. After pressing the generate button, the application opens ViewController with a QR code that can be shared using the share button.
 
-- **Scanner**
+- **Scanner**\
 The scanner is used to scan QR codes. The user is presented with a preview window that has a designated scan area. After the code has been scanned, a window with the scanned programming code is displayed. This works much like a generator, but the code cannot be edited. This is to serve as a preview because a generator is used to edit the code. However, the user can copy all the code and make changes, and then share the corrected code in the GeneratorViewController.
 
-- **Settings**
+- **Settings**\
 Qode allows you to personalize your application, i.e. themes, accent color, default programming language, and color of the scan field.
 
-- **Dark mode supported**
+- **Dark mode supported**\
 Because who doesn't like the dark mode?
 
-- **Languages available**
+- **Languages available**\
 Qode currently supports such languages as Polish and English.
 
 ## Tech
