@@ -34,6 +34,7 @@ Qode currently supports such languages as Polish and English.
 - UserDefaults
 - Highlightr
 - IQKeyboardManager
+- CoreImage
 
 ## Informations
 - The project is ended but will be further developed.
