@@ -1,6 +1,6 @@
 ![Qode](https://user-images.githubusercontent.com/41966757/118408070-1047a080-b684-11eb-913d-4b40105bf91b.png)
 
-*-- Imagine the scenario: --\
+*-- Imagine the scenario --\
 Your friend asks you for help in finding a bug in his code - he sends it to you via communicator or SMS. This is very bothersome because all the lines are slurring, the code is unreadable and the syntax is not colored. Thanks to Qode, you won't have to reply to him "Sorry, I don't have access to a computer, another time"!*
 
 Qode is an innovative application that allows you to quickly send and check the programming code, transferred in the form of a QR code. Thanks to this, you do not have to wonder where you are and what you are doing - this great application will always be with you when you have your iPhone or iPad with you!
@@ -8,10 +8,8 @@ Qode is an innovative application that allows you to quickly send and check the 
 ## Download
 ![Qode - App Store](https://user-images.githubusercontent.com/41966757/118408099-30775f80-b684-11eb-85bd-7289017caff6.png)
 Qode is available on the AppStore - you can try it out yourself.
-To download it, click on the link below.
-
-https://apps.apple.com/pl/app/zodiacally-birthday-manager/id1563743635?l=en
-
+To download it, click on the link below.\
+https://apps.apple.com/us/app/qode-developers-qr-codes/id1567530993
 
 ## Features
 - **Generator**\
