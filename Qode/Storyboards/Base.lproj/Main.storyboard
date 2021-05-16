@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xKt-lt-Ijb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="menuVC" id="BYZ-38-t0r" customClass="MenuViewController" customModule="Qode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MDN-fx-uxD">
+                                <rect key="frame" x="20" y="253" width="374" height="390"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Qode Logo " translatesAutoresizingMaskIntoConstraints="NO" id="njn-Px-sjm">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="210"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="njn-Px-sjm" secondAttribute="height" multiplier="16:9" id="RP2-Hq-CIc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0Y4-TJ-XK6" userLabel="Buttons VStack">
+                                        <rect key="frame" x="0.0" y="210" width="374" height="180"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89C-fc-lrL">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="6m2-G4-0B1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="Generate Code"/>
+                                                <connections>
+                                                    <segue destination="Ng4-pf-iBw" kind="show" id="Apf-dE-kFH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrG-NQ-8GE">
+                                                <rect key="frame" x="0.0" y="65" width="374" height="50"/>
+                                                <state key="normal" title="Scan Code"/>
+                                                <connections>
+                                                    <segue destination="nNk-by-MKD" kind="show" id="26X-3l-Coq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuY-Za-Qpz">
+                                                <rect key="frame" x="0.0" y="130" width="374" height="50"/>
+                                                <state key="normal" title="Settings"/>
+                                                <connections>
+                                                    <segue destination="ctR-2j-jEN" kind="show" id="UEI-51-28D"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="zuY-Za-Qpz" firstAttribute="height" secondItem="nrG-NQ-8GE" secondAttribute="height" id="MIV-12-X13"/>
+                                            <constraint firstItem="nrG-NQ-8GE" firstAttribute="height" secondItem="89C-fc-lrL" secondAttribute="height" id="ZdO-E0-OtF"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MDN-fx-uxD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Ey-vr-1DX"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MDN-fx-uxD" secondAttribute="trailing" constant="20" id="8Jv-OE-HFq"/>
+                            <constraint firstItem="MDN-fx-uxD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="XZS-1k-Lqb"/>
+                            <constraint firstItem="MDN-fx-uxD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gh6-pY-R4z"/>
+                            <constraint firstAttribute="bottom" secondItem="MDN-fx-uxD" secondAttribute="bottom" priority="990" constant="10" id="grC-Po-YGE"/>
+                            <constraint firstItem="MDN-fx-uxD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" priority="990" constant="10" id="xw9-67-Uuy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="797-XX-ML2"/>
+                    <connections>
+                        <outlet property="generateButton" destination="89C-fc-lrL" id="kac-43-ccw"/>
+                        <outlet property="scanButton" destination="nrG-NQ-8GE" id="I50-eX-u0i"/>
+                        <outlet property="settingsButton" destination="zuY-Za-Qpz" id="Wtu-Za-jqO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.125" y="87.5"/>
+        </scene>
+        <!--Scan Code-->
+        <scene sceneID="rXW-pQ-lDc">
+            <objects>
+                <viewController storyboardIdentifier="scannerVC" id="nNk-by-MKD" customClass="ScannerViewController" customModule="Qode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XTm-co-TyA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vC5-tw-CEk">
+                                <rect key="frame" x="75" y="316" width="264" height="264"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vC5-tw-CEk" secondAttribute="height" multiplier="1:1" id="K3y-fi-Yjo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dsE-wy-uwd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vC5-tw-CEk" firstAttribute="centerX" secondItem="XTm-co-TyA" secondAttribute="centerX" id="73u-QO-9Ru"/>
+                            <constraint firstItem="dsE-wy-uwd" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vC5-tw-CEk" secondAttribute="trailing" constant="75" id="Ifs-ew-apX"/>
+                            <constraint firstItem="vC5-tw-CEk" firstAttribute="top" secondItem="dsE-wy-uwd" secondAttribute="top" priority="990" constant="50" id="LBq-x1-NvV"/>
+                            <constraint firstItem="vC5-tw-CEk" firstAttribute="centerY" secondItem="XTm-co-TyA" secondAttribute="centerY" id="NaI-ZV-d7C"/>
+                            <constraint firstAttribute="bottom" secondItem="vC5-tw-CEk" secondAttribute="bottom" priority="900" constant="10" id="OW4-uZ-NhM"/>
+                            <constraint firstItem="vC5-tw-CEk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dsE-wy-uwd" secondAttribute="leading" constant="75" id="bTq-Iy-fVd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Scan Code" id="HVV-Qs-Lmj"/>
+                    <connections>
+                        <outlet property="scannerAreaSquare" destination="vC5-tw-CEk" id="46r-Wq-17c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O3M-UN-7pn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1890" y="88"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="5ef-ts-HsF">
+            <objects>
+                <viewController id="ctR-2j-jEN" customClass="SettingsViewController" customModule="Qode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nOQ-T5-nHl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2yG-sL-OBC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="PB7-1v-e9w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KFT-VS-hKm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1890" y="824"/>
+        </scene>
+        <!--Scanned Code View Controller-->
+        <scene sceneID="K0j-lw-Whq">
+            <objects>
+                <viewController storyboardIdentifier="scannedCodeVC" id="gva-XS-DVh" customClass="ScannedCodeViewController" customModule="Qode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IZD-In-pbr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rep-fY-58w">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5SA-2v-jkH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5SA-2v-jkH" firstAttribute="trailing" secondItem="Rep-fY-58w" secondAttribute="trailing" constant="20" id="JTj-K0-7S8"/>
+                            <constraint firstItem="Rep-fY-58w" firstAttribute="bottom" secondItem="5SA-2v-jkH" secondAttribute="bottom" id="N03-db-2xy"/>
+                            <constraint firstItem="Rep-fY-58w" firstAttribute="top" secondItem="5SA-2v-jkH" secondAttribute="top" id="g0Q-lS-eZ7"/>
+                            <constraint firstItem="Rep-fY-58w" firstAttribute="leading" secondItem="5SA-2v-jkH" secondAttribute="leading" constant="20" id="tzg-PE-rOZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="paddingView" destination="Rep-fY-58w" id="9N0-rX-OLJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHn-TX-JuQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2740.579710144928" y="87.723214285714278"/>
+        </scene>
+        <!--Generate Code-->
+        <scene sceneID="ABr-Zn-Wbf">
+            <objects>
+                <viewController storyboardIdentifier="generatorVC" id="Ng4-pf-iBw" customClass="GeneratorViewController" customModule="Qode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A58-xB-dUo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kjv-iI-3Jh">
+                                <rect key="frame" x="20" y="140" width="374" height="722"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oe3-vF-Yjg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kjv-iI-3Jh" firstAttribute="leading" secondItem="oe3-vF-Yjg" secondAttribute="leading" constant="20" id="35y-c4-Ine"/>
+                            <constraint firstItem="oe3-vF-Yjg" firstAttribute="trailing" secondItem="Kjv-iI-3Jh" secondAttribute="trailing" constant="20" id="7O6-zR-zQ4"/>
+                            <constraint firstItem="Kjv-iI-3Jh" firstAttribute="top" secondItem="oe3-vF-Yjg" secondAttribute="top" id="Rax-eR-ohG"/>
+                            <constraint firstItem="Kjv-iI-3Jh" firstAttribute="bottom" secondItem="oe3-vF-Yjg" secondAttribute="bottom" id="ce4-7e-sLC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Generate Code" id="Oab-hU-Hzy"/>
+                    <connections>
+                        <outlet property="paddingView" destination="Kjv-iI-3Jh" id="2AQ-Gl-YDs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IkH-7T-SNg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1890" y="-629"/>
+        </scene>
+        <!--codeOutputVC-->
+        <scene sceneID="bn4-af-txT">
+            <objects>
+                <viewController storyboardIdentifier="generatedCodeVC" title="codeOutputVC" id="aK0-jn-bY6" customClass="QRCodeOutputViewController" customModule="Qode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6s1-0i-cZW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GiG-62-C6k">
+                                <rect key="frame" x="50" y="291" width="314" height="314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GiG-62-C6k" secondAttribute="height" multiplier="1:1" id="V45-Tp-O3R"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wR2-a7-hEh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GiG-62-C6k" firstAttribute="centerY" secondItem="6s1-0i-cZW" secondAttribute="centerY" id="5oT-uu-Pur"/>
+                            <constraint firstItem="GiG-62-C6k" firstAttribute="centerX" secondItem="6s1-0i-cZW" secondAttribute="centerX" id="Hly-xi-1CQ"/>
+                            <constraint firstItem="wR2-a7-hEh" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GiG-62-C6k" secondAttribute="trailing" constant="50" id="I28-rD-3ff"/>
+                            <constraint firstItem="GiG-62-C6k" firstAttribute="top" secondItem="6s1-0i-cZW" secondAttribute="top" priority="990" constant="50" id="V5P-la-acg"/>
+                            <constraint firstAttribute="bottom" secondItem="GiG-62-C6k" secondAttribute="bottom" priority="990" constant="50" id="amb-VP-6ac"/>
+                            <constraint firstItem="GiG-62-C6k" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wR2-a7-hEh" secondAttribute="leading" constant="50" id="lbR-R9-10E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="codeImageView" destination="GiG-62-C6k" id="MD7-RN-xns"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w3D-gs-kcc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2741" y="-629"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bvj-CC-N3p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xKt-lt-Ijb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="3eI-Nc-7rZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RX3-qu-2MD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N6r-Bm-GGk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Qode Logo " width="1024" height="1024"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

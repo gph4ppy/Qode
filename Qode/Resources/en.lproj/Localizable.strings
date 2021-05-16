@@ -1,0 +1,120 @@
+/* 
+  Localizable.strings
+  Qode
+
+  Created by Jakub "GPH4PPY" Dąbrowski on 08/05/2021.
+  
+*/
+
+// MARK: - GENERATOR
+"Generate" = "Generate";
+"Language" = "Language";
+"Your QR Code" = "Your QR Code";
+
+"Not too much?" = "Not too much?";
+"Too Long Code" = "Your QR code can contain a maximum of 2200 characters. Shorten the code or send it in several QR codes.";
+
+"Empty code?" = "Empty code?";
+"Empty Code Body" = "You need to write some code to generate the QR code.";
+"Illegal Characters Alert" = "Your code cannot contain any illegal characters (you can find the list in the settings) - remove them and try again.";
+
+// MARK: - Scanner
+"Share" = "Share";
+"Scan the Code" = "Scan the Code";
+"Scanned Code" = "Scanned Code";
+"Select Language Body" = "Select the programming language that the code below applies to. It will be needed to highlight the syntax.";
+
+// MARK: - Settings
+"Appearance" = "Appearance";
+"Theme" = "Theme";
+"Default language" = "Default language";
+"Scanner area color" = "Scanner area color";
+"Accent color" = "Accent color";
+
+// About
+"About" = "About";
+"About Qode" = "About Qode";
+"About Qode Body" = "Qode is an application that is designed to facilitate the quick submission of code for checking or copying. Everything is closed in the form of a QR code, which after scanning with the application has a highlighted syntax that makes it easier to read the content anywhere, at any time - whether on the bus or in the queue to the store... From now on, it does not matter - Qode users can do everything on their iPhone or iPad, wherever they are!";
+"Cool!" = "Cool!";
+
+// Credits
+"Credits and licenses" = "Credits and licenses";
+"Credits Body" = "The application uses such pods as";
+"Highlightr Body" = "Highlightr is an iOS & macOS syntax highlighter built with Swift.
+
+License:
+Copyright (c) 2016 Illanes, Juan Pablo <jpillaness+highlightr@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \"Software\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.";
+
+"IQKeyboardManager Body" = "IQKeyboardManager allows preventing the issue of the keyboard sliding up and covering UITextField/UITextView.
+
+License:
+MIT License
+
+Copyright (c) 2013-2017 Iftekhar Qurashi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.";
+
+// Characters
+"Illegal characters" = "Illegal characters";
+"Illegal characters Body" = "The illegal characters are:
+
+Ⓐⓐ⒜ẠạÅåÄäẢảḀḁẤấẦầẨẩȂȃẪẫẬậẮắẰằẲẳẴẵẶặĀāĄąȀȁǺǻȦȧÁáǞǟǍǎÀàÃãǠǡÂâȺⱥÆæǢǣǼǽⱯꜲꜳꜸꜹꜺꜻⱭ℀⅍℁ª
+Ⓑⓑ⒝ḂḃḄḅḆḇƁɃƀƂƃƄƅℬ
+Ⓒⓒ⒞ḈḉĆćĈĉĊċČčÇçƇƈȻȼℂ℃ƆꜾꜿℭ℅℆℄
+Ⓓⓓ⒟ḊḋḌḍḎḏḐḑḒḓĎďƊƋƌƉĐđȡǱǲǳǄǅǆȸⅅⅆ
+Ⓔⓔ⒠ḔḕḖḗḘḙḚḛḜḝẸẹẺẻẾếẼẽỀềỂểỄễỆệĒēĔĕĖėĘęĚěÈèÉéÊêËëȄȅȨȩȆȇƎⱻɆɇƏǝℰⱸℯ℮€ℇƐ
+Ⓕⓕ⒡ḞḟƑƒꜰℲⅎꟻℱ℻
+Ⓖⓖ⒢ƓḠḡĜĝĞğĠġǤǥǦǧǴℊ⅁ǵĢģ
+Ⓗⓗ⒣ḢḣḤḥḦḧḨḩḪḫĤĥȞȟĦħⱧⱨꜦℍǶẖℏℎℋℌꜧ
+Ⓘⓘ⒤ḬḭḮḯĲĳÍíÌìÎîÏïĨĩĪīĬĭĮįǏǐıƚỺⅈⅉℹℑℐ
+Ⓙⓙ⒥ĴĵɈɉȷⱼǰ
+Ⓚⓚ⒦ḰḱḲḳḴḵĶķƘƙꝀꝁꝂꝃꝄꝅǨǩⱩⱪĸ
+Ⓛⓛ⒧ḶḷḸḹḺḻḼḽĹĺĻļĽľĿŀŁłỈỉⱠⱡȽꝉꝈⱢǇǈǉỊİịꞁ⅃⅂ȈȉȊȋℓℒ
+Ⓜⓜ⒨ḾḿṀṁṂṃꟿꟽⱮƜℳ
+Ⓝⓝ⒩ṄṅṆṇṈṉṊṋŃńŅņŇňǸǹÑñȠƞŊŋƝŉǊǋǌȵℕ№
+Ⓞⓞ⒪ÖöṎṏṌṍṐṑṒṓȪȫȬȭȮȯȰȱǪǫǬǭỌọỎỏỐốỒồỔổỖỗỘộỚớỜờỞởỠỡỢợƠơŌōŎŏŐőÒòÓóÔôÕõǑǒȌȍȎȏŒœØøǾǿꝊꝎꝏ⍥⍤ℴ
+Ⓟⓟ⒫℗ṔṕṖṗƤƥⱣℙǷꟼ℘Ⓠⓠ⒬Ɋɋℚ℺ȹ
+Ⓡⓡ⒭ŔŕŖŗŘřṘṙṚṛṜṝṞṟȐȑȒȓɌɍƦꝚꝛⱤ℞ℜℛ℟ℝ
+Ⓢⓢ⒮ṠṡṢṣṤṥṦṧṨṩŚśŜŝŞşŠšȘșȿꜱƧƨϨϩẞßẛẜẝ℠
+Ⓣⓣ⒯ṪṫṬṭṮṯṰṱŢţŤťŦŧȚțȾⱦƬƮƫƭẗȶ℡™
+Ⓤⓤ⒰ṲṳṴṵṶṷṸṹṺṻỦủỤụỨứỪừỬửỮữỰựŨũŪūŬŭŮůŰűǙǚǗǘǛǜŲųǓǔȔȕÛûȖȗÙùÚúÜüƯưɄƲƱ
+Ⓥⓥ⒱ṼṽṾṿɅ℣Ỽⱱⱴⱽ
+Ⓦⓦ⒲ẀẁẂẃẄẅẆẇẈẉŴŵⱲⱳϢϣẘ
+Ⓧⓧ⒳ẊẋẌẍℵ×
+Ⓨⓨ⒴ẎẏỾỿỲỳỴỵỶỷỸỹŶŷƳƴŸÿÝýɎɏȲȳƔẙ⅄ℽ
+Ⓩⓩ⒵ẐẑẒẓẔẕŹźŻżŽžȤȥⱫⱬƵƶɀℨℤ and emojis.";
+
+// MARK: Alerts
+"OK" = "OK";
+"Cancel" = "Cancel";
+"Thanks!" = "Thanks!";
+
+// Settings Alerts
+"Select theme" = "Select theme";
+"Default Language Body" = "Select the default programming language. It will be needed to highlight the syntax.";
+
+// MARK: Quick Actions
+"Scan QR Code" = "Scan QR Code";
+"ScanBody" = "Scan the QR code to get the code.";

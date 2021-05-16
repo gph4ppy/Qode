@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "Generate Code"; ObjectID = "89C-fc-lrL"; */
+"89C-fc-lrL.normalTitle" = "Generuj Kod";
+
+/* Class = "UINavigationItem"; title = "Scan Code"; ObjectID = "HVV-Qs-Lmj"; */
+"HVV-Qs-Lmj.title" = "Skanuj Kod";
+
+/* Class = "UINavigationItem"; title = "Generate Code"; ObjectID = "Oab-hU-Hzy"; */
+"Oab-hU-Hzy.title" = "Generuj Kod";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "PB7-1v-e9w"; */
+"PB7-1v-e9w.title" = "Ustawienia";
+
+/* Class = "UIViewController"; title = "codeOutputVC"; ObjectID = "aK0-jn-bY6"; */
+"aK0-jn-bY6.title" = "codeOutputVC";
+
+/* Class = "UIButton"; normalTitle = "Scan Code"; ObjectID = "nrG-NQ-8GE"; */
+"nrG-NQ-8GE.normalTitle" = "Skanuj Kod";
+
+/* Class = "UIButton"; normalTitle = "Settings"; ObjectID = "zuY-Za-Qpz"; */
+"zuY-Za-Qpz.normalTitle" = "Ustawienia";
