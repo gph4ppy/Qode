@@ -40,16 +40,15 @@ Qode currently supports such languages as Polish and English.
 - Please, if you want to use my app, consider buying it on the AppStore. Of course, theoretically, you can build it by yourself by copying the repository and building the app in Xcode, but please, do it only for testing (when you are not sure about buying). Thanks in advance!
 
 ## Versions
-- **v1.1:**\
-Version 1.1 has arrived, and with it:
-1. New layout.
-2. New Features:
+###v1.1
+- New layout.
+- New Features:
     - A code reader that allows you to read QR codes with a programming code from an image uploaded from the gallery. the highlighted code is displayed below the QR code.
     - Saved codes, i.e. the ability to save QR codes (and their content) in a special section, which can be accessed through the main menu. The codes are saved (at the moment) only on the device that is used.
-3. Changed the color of the title in the scanner view - now it's always white.
-4. New section in the settings - application version.
+- Changed the color of the title in the scanner view - now it's always white.
+- New section in the settings - application version.
 
-- **v1.0:**\
+###v1.0:
 Initial commit.
 
 ## Gallery
