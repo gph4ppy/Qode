@@ -36,6 +36,16 @@ final class ScannerViewController: UIViewController, AVCaptureMetadataOutputObje
         
         // Start session
         self.session.startRunning()
+        
+        // Change NavBar Title Color to white
+        changeNavBarTitleColor(to: .white)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // Change NavBar Title Color to the default color
+        changeNavBarTitleColor(to: .label)
     }
     
     override func viewDidDisappear(_ animated: Bool) {

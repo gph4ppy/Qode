@@ -41,4 +41,13 @@ extension ScannedCodeViewController {
             textView.heightAnchor.constraint(equalTo: paddingView.heightAnchor)
         ])
     }
+    
+    /// This method assigns the qr code image and code content to the properties in this superclass.
+    @objc internal func assignAndSave() {
+        if let code = self.text {
+            qrCode = generator.generateQRCode(from: code)
+            codeContent = code
+            saveCode()
+        }
+    }
 }

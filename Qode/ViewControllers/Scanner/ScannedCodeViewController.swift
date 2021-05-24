@@ -8,13 +8,14 @@
 import UIKit
 import Highlightr
 
-final class ScannedCodeViewController: UIViewController {
+final class ScannedCodeViewController: SavingManager {
     // Outlets
     @IBOutlet var paddingView:      UIView!
     
     // Properties
     internal let highlightr         = Highlightr()
     internal let textStorage        = CodeAttributedString()
+    internal let generator          = QRCodeOutputViewController()
     internal var selectedLanguage   = UserDefaults.standard.string(forKey: "language") ?? "swift"
     internal let selectedTheme      = UserDefaults.standard.string(forKey: "theme") ?? "paraiso-dark"
     public var text:                String?
@@ -24,10 +25,18 @@ final class ScannedCodeViewController: UIViewController {
         
         // Setup NavBar - title and NavBar button
         title = LocalizedStrings.scannedCodeTitle
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: LocalizedStrings.language,
-                                                            style: .plain,
-                                                            target: self,
-                                                            action: #selector(changeLanguage))
+        
+        let saveButton              = UIBarButtonItem(title: LocalizedStrings.save,
+                                                      style: .plain,
+                                                      target: self,
+                                                      action: #selector(assignAndSave))
+        
+        let changeLanguageButton    = UIBarButtonItem(title: LocalizedStrings.language,
+                                                      style: .plain,
+                                                      target: self,
+                                                      action: #selector(changeLanguage))
+        
+        navigationItem.rightBarButtonItems = [saveButton, changeLanguageButton]
         
         // Setup ViewController
         setupView()

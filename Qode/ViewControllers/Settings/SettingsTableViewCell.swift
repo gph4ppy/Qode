@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingsTableViewCell: UITableViewCell {
+final class SettingsTableViewCell: UITableViewCell {
     // Properties
     static let identifier = "SettingsTableViewCell"
     

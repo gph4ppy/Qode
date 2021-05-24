@@ -104,6 +104,21 @@ extension SettingsViewController {
                                 
                                 self.present(alert, animated: true)
                                }),
+                
+                // App Version
+                SettingsOption(title: LocalizedStrings.version,
+                               icon: UIImage(systemName: "doc.badge.gearshape.fill"),
+                               iconBackgroundColor: .darkText,
+                               handler: {
+                                let appVersionBundleKey = "CFBundleShortVersionString"
+                                guard let appVersion = Bundle.main.infoDictionary?[appVersionBundleKey] as? String else { return }
+                                
+                                let alert = self.createAlert(title: LocalizedStrings.version,
+                                                             message: appVersion,
+                                                             action: LocalizedStrings.ok)
+                                
+                                self.present(alert, animated: true)
+                               })
             ])
         ]
     }

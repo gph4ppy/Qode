@@ -8,7 +8,7 @@
 import UIKit
 
 final class Styling {
-    static public let cornerRadius: CGFloat = 15
+    static public let cornerRadius: CGFloat = 25
     
     /// This method sets the appearance of the menu buttons.
     /// - Parameter button: The button whose appearance will be changed.
@@ -16,6 +16,7 @@ final class Styling {
         button.layer.cornerRadius = cornerRadius
         button.layer.backgroundColor = UIColor.darkGray.cgColor
         button.tintColor = .white
+        button.layer.cornerCurve = .continuous
     }
     
     /// This method sets a mask with a rectangle hole inside the view. 

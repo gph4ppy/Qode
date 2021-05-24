@@ -3,11 +3,56 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Read Code-->
+        <scene sceneID="QB0-u9-XsN">
+            <objects>
+                <viewController id="tza-P9-Sqb" customClass="ReaderViewController" customModule="Qode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3qU-UV-zaB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gwN-Lv-3j2">
+                                <rect key="frame" x="50" y="160" width="314" height="314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gwN-Lv-3j2" secondAttribute="height" multiplier="1:1" id="acB-Jd-KmQ"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSR-pI-s0K">
+                                <rect key="frame" x="20" y="484" width="374" height="368"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rIK-BV-kGt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nSR-pI-s0K" firstAttribute="centerX" secondItem="3qU-UV-zaB" secondAttribute="centerX" id="68S-52-JG9"/>
+                            <constraint firstItem="nSR-pI-s0K" firstAttribute="top" secondItem="gwN-Lv-3j2" secondAttribute="bottom" priority="999" constant="10" id="E4X-DQ-52E"/>
+                            <constraint firstItem="rIK-BV-kGt" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gwN-Lv-3j2" secondAttribute="trailing" constant="50" id="EbJ-4N-IgB"/>
+                            <constraint firstItem="gwN-Lv-3j2" firstAttribute="centerX" secondItem="3qU-UV-zaB" secondAttribute="centerX" id="Yml-lo-0sP"/>
+                            <constraint firstItem="rIK-BV-kGt" firstAttribute="bottom" secondItem="nSR-pI-s0K" secondAttribute="bottom" priority="999" constant="10" id="dle-Nz-fqW"/>
+                            <constraint firstItem="rIK-BV-kGt" firstAttribute="bottom" secondItem="gwN-Lv-3j2" secondAttribute="bottom" priority="800" constant="200" id="fZa-4C-Ntd"/>
+                            <constraint firstItem="gwN-Lv-3j2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rIK-BV-kGt" secondAttribute="leading" constant="50" id="heI-0u-sZH"/>
+                            <constraint firstItem="gwN-Lv-3j2" firstAttribute="top" secondItem="rIK-BV-kGt" secondAttribute="top" constant="20" id="ksQ-bM-waM"/>
+                            <constraint firstItem="rIK-BV-kGt" firstAttribute="trailing" secondItem="nSR-pI-s0K" secondAttribute="trailing" constant="20" id="wze-us-FQO"/>
+                            <constraint firstItem="nSR-pI-s0K" firstAttribute="leading" secondItem="rIK-BV-kGt" secondAttribute="leading" constant="20" id="zz8-E4-PQz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Read Code" id="DFm-f2-Bue"/>
+                    <connections>
+                        <outlet property="codeView" destination="nSR-pI-s0K" id="DNg-bq-f4O"/>
+                        <outlet property="qrCodeImageView" destination="gwN-Lv-3j2" id="Wyv-hS-aGF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K2N-Z7-XQT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="85.714285714285708"/>
+        </scene>
         <!--Menu View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -16,47 +61,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MDN-fx-uxD">
-                                <rect key="frame" x="20" y="253" width="374" height="390"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MDN-fx-uxD">
+                                <rect key="frame" x="20" y="50" width="374" height="796"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Qode Logo " translatesAutoresizingMaskIntoConstraints="NO" id="njn-Px-sjm">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="210"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="398"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="njn-Px-sjm" secondAttribute="height" multiplier="16:9" id="RP2-Hq-CIc"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="990" constant="230" id="QuS-Yh-ZCb"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0Y4-TJ-XK6" userLabel="Buttons VStack">
-                                        <rect key="frame" x="0.0" y="210" width="374" height="180"/>
+                                        <rect key="frame" x="0.0" y="398" width="374" height="398"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89C-fc-lrL">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Kdf-E2-aRV" userLabel="GenScan HStack">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="122.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89C-fc-lrL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="122.5"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                                        <state key="normal" title="Generate Code">
+                                                            <imageReference key="image" image="qrcode" catalog="system" symbolScale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="Ng4-pf-iBw" kind="show" id="Apf-dE-kFH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrG-NQ-8GE">
+                                                        <rect key="frame" x="197" y="0.0" width="177" height="122.5"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                                        <state key="normal" title="Scan Code" image="qrcode.viewfinder" catalog="system"/>
+                                                        <connections>
+                                                            <segue destination="nNk-by-MKD" kind="show" id="26X-3l-Coq"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="6m2-G4-0B1"/>
+                                                    <constraint firstItem="nrG-NQ-8GE" firstAttribute="width" secondItem="89C-fc-lrL" secondAttribute="width" id="CfF-WU-Ht8"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <state key="normal" title="Generate Code"/>
-                                                <connections>
-                                                    <segue destination="Ng4-pf-iBw" kind="show" id="Apf-dE-kFH"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrG-NQ-8GE">
-                                                <rect key="frame" x="0.0" y="65" width="374" height="50"/>
-                                                <state key="normal" title="Scan Code"/>
-                                                <connections>
-                                                    <segue destination="nNk-by-MKD" kind="show" id="26X-3l-Coq"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuY-Za-Qpz">
-                                                <rect key="frame" x="0.0" y="130" width="374" height="50"/>
-                                                <state key="normal" title="Settings"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Vc0-rA-Gbg" userLabel="ReadSaved HStack">
+                                                <rect key="frame" x="0.0" y="137.5" width="374" height="123"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kn9-84-B7C">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="123"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                                        <state key="normal" title="Read Code" image="text.magnifyingglass" catalog="system"/>
+                                                        <connections>
+                                                            <segue destination="tza-P9-Sqb" kind="show" id="uk6-zU-9bn"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFJ-Fi-iog">
+                                                        <rect key="frame" x="197" y="0.0" width="177" height="123"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                                        <state key="normal" title="Saved Codes" image="internaldrive" catalog="system"/>
+                                                        <connections>
+                                                            <segue destination="Sih-6s-h1i" kind="show" id="fRG-zI-fkd"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="JFJ-Fi-iog" firstAttribute="height" secondItem="kn9-84-B7C" secondAttribute="height" id="NuZ-BO-Nrs"/>
+                                                    <constraint firstItem="JFJ-Fi-iog" firstAttribute="width" secondItem="kn9-84-B7C" secondAttribute="width" id="Vo6-35-wFk"/>
+                                                </constraints>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuY-Za-Qpz">
+                                                <rect key="frame" x="0.0" y="275.5" width="374" height="122.5"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                                <state key="normal" title="Settings" image="gear" catalog="system"/>
                                                 <connections>
                                                     <segue destination="ctR-2j-jEN" kind="show" id="UEI-51-28D"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="zuY-Za-Qpz" firstAttribute="height" secondItem="nrG-NQ-8GE" secondAttribute="height" id="MIV-12-X13"/>
-                                            <constraint firstItem="nrG-NQ-8GE" firstAttribute="height" secondItem="89C-fc-lrL" secondAttribute="height" id="ZdO-E0-OtF"/>
+                                            <constraint firstItem="zuY-Za-Qpz" firstAttribute="height" secondItem="kn9-84-B7C" secondAttribute="height" id="PDI-Ph-dWY"/>
+                                            <constraint firstItem="kn9-84-B7C" firstAttribute="width" secondItem="89C-fc-lrL" secondAttribute="width" id="lxD-BR-Q50"/>
+                                            <constraint firstItem="kn9-84-B7C" firstAttribute="height" secondItem="89C-fc-lrL" secondAttribute="height" id="w3q-rB-VN1"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -66,16 +146,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MDN-fx-uxD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Ey-vr-1DX"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MDN-fx-uxD" secondAttribute="trailing" constant="20" id="8Jv-OE-HFq"/>
-                            <constraint firstItem="MDN-fx-uxD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="XZS-1k-Lqb"/>
+                            <constraint firstAttribute="trailing" secondItem="MDN-fx-uxD" secondAttribute="trailing" constant="20" id="8Jv-OE-HFq"/>
+                            <constraint firstItem="MDN-fx-uxD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="XZS-1k-Lqb"/>
                             <constraint firstItem="MDN-fx-uxD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gh6-pY-R4z"/>
-                            <constraint firstAttribute="bottom" secondItem="MDN-fx-uxD" secondAttribute="bottom" priority="990" constant="10" id="grC-Po-YGE"/>
-                            <constraint firstItem="MDN-fx-uxD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" priority="990" constant="10" id="xw9-67-Uuy"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="MDN-fx-uxD" secondAttribute="bottom" constant="50" id="grC-Po-YGE"/>
+                            <constraint firstItem="MDN-fx-uxD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="xw9-67-Uuy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="797-XX-ML2"/>
                     <connections>
                         <outlet property="generateButton" destination="89C-fc-lrL" id="kac-43-ccw"/>
+                        <outlet property="readButton" destination="kn9-84-B7C" id="acK-Bc-1Xe"/>
+                        <outlet property="savedButton" destination="JFJ-Fi-iog" id="uJf-Ky-N1f"/>
                         <outlet property="scanButton" destination="nrG-NQ-8GE" id="I50-eX-u0i"/>
                         <outlet property="settingsButton" destination="zuY-Za-Qpz" id="Wtu-Za-jqO"/>
                     </connections>
@@ -83,6 +165,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.125" y="87.5"/>
+        </scene>
+        <!--Saved Codes-->
+        <scene sceneID="HkD-ye-k4O">
+            <objects>
+                <tableViewController id="Sih-6s-h1i" customClass="SavedViewController" customModule="Qode" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="z3g-pQ-f3A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SavedCell" textLabel="Bg9-rn-M4v" detailTextLabel="Kxn-Ln-1gj" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="Z8w-4w-j8K">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z8w-4w-j8K" id="wdS-zo-Bbm">
+                                    <rect key="frame" x="0.0" y="0.0" width="384.5" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bg9-rn-M4v">
+                                            <rect key="frame" x="20" y="14" width="26.5" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kxn-Ln-1gj">
+                                            <rect key="frame" x="20" y="30.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Sih-6s-h1i" id="Vqo-Sh-nzL"/>
+                            <outlet property="delegate" destination="Sih-6s-h1i" id="MMA-nq-FIq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Saved Codes" id="f6F-GL-lR2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="syx-AP-1nY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800" y="86"/>
         </scene>
         <!--Scan Code-->
         <scene sceneID="rXW-pQ-lDc">
@@ -117,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O3M-UN-7pn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1890" y="88"/>
+            <point key="canvasLocation" x="1800" y="-629"/>
         </scene>
         <!--Settings-->
         <scene sceneID="5ef-ts-HsF">
@@ -133,7 +261,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KFT-VS-hKm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1890" y="824"/>
+            <point key="canvasLocation" x="928" y="815"/>
         </scene>
         <!--Scanned Code View Controller-->
         <scene sceneID="K0j-lw-Whq">
@@ -163,7 +291,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tHn-TX-JuQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2740.579710144928" y="87.723214285714278"/>
+            <point key="canvasLocation" x="2641" y="-629"/>
         </scene>
         <!--Generate Code-->
         <scene sceneID="ABr-Zn-Wbf">
@@ -194,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IkH-7T-SNg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1890" y="-629"/>
+            <point key="canvasLocation" x="54" y="-629"/>
         </scene>
         <!--codeOutputVC-->
         <scene sceneID="bn4-af-txT">
@@ -228,7 +356,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w3D-gs-kcc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2741" y="-629"/>
+            <point key="canvasLocation" x="-835" y="-629"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bvj-CC-N3p">
@@ -246,11 +374,60 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N6r-Bm-GGk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="88.392857142857139"/>
+            <point key="canvasLocation" x="928" y="-629"/>
+        </scene>
+        <!--SavedCode-->
+        <scene sceneID="y5g-El-acS">
+            <objects>
+                <viewController storyboardIdentifier="detailVC" id="46c-oH-g11" userLabel="SavedCode" customClass="SavedDetailViewController" customModule="Qode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ypp-jV-x5N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fge-om-Fev">
+                                <rect key="frame" x="50" y="64" width="314" height="314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fge-om-Fev" secondAttribute="height" multiplier="1:1" id="b5g-ci-uJa"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UO9-uU-FjE">
+                                <rect key="frame" x="20" y="388" width="374" height="464"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a7q-dO-H2Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fge-om-Fev" firstAttribute="top" secondItem="a7q-dO-H2Q" secondAttribute="top" constant="20" id="6Gb-0h-0ob"/>
+                            <constraint firstItem="a7q-dO-H2Q" firstAttribute="trailing" secondItem="UO9-uU-FjE" secondAttribute="trailing" constant="20" id="Es5-R9-XUG"/>
+                            <constraint firstItem="a7q-dO-H2Q" firstAttribute="bottom" secondItem="UO9-uU-FjE" secondAttribute="bottom" priority="999" constant="10" id="I36-yn-JWB"/>
+                            <constraint firstItem="a7q-dO-H2Q" firstAttribute="bottom" secondItem="fge-om-Fev" secondAttribute="bottom" priority="800" constant="200" id="XDT-GI-Ria"/>
+                            <constraint firstItem="UO9-uU-FjE" firstAttribute="leading" secondItem="a7q-dO-H2Q" secondAttribute="leading" constant="20" id="Yep-rq-XGK"/>
+                            <constraint firstItem="fge-om-Fev" firstAttribute="centerX" secondItem="ypp-jV-x5N" secondAttribute="centerX" id="Yw7-je-jtk"/>
+                            <constraint firstItem="UO9-uU-FjE" firstAttribute="centerX" secondItem="ypp-jV-x5N" secondAttribute="centerX" id="gAu-s9-PO5"/>
+                            <constraint firstItem="a7q-dO-H2Q" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fge-om-Fev" secondAttribute="trailing" constant="50" id="kfE-TY-Xw4"/>
+                            <constraint firstItem="fge-om-Fev" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="a7q-dO-H2Q" secondAttribute="leading" constant="50" id="lRz-uP-IhR"/>
+                            <constraint firstItem="UO9-uU-FjE" firstAttribute="top" secondItem="fge-om-Fev" secondAttribute="bottom" priority="999" constant="10" id="mXM-7Z-4OB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Read Code" id="cIN-Op-sjr"/>
+                    <connections>
+                        <outlet property="codeView" destination="UO9-uU-FjE" id="E0D-cW-1Qh"/>
+                        <outlet property="qrCodeImageView" destination="fge-om-Fev" id="iJI-R0-pOg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T5q-kG-rdN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2610" y="86"/>
         </scene>
     </scenes>
     <resources>
         <image name="Qode Logo " width="1024" height="1024"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="internaldrive" catalog="system" width="128" height="88"/>
+        <image name="qrcode" catalog="system" width="128" height="114"/>
+        <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
+        <image name="text.magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

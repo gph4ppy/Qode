@@ -45,6 +45,8 @@ final class LocalizedStrings {
     public static let illegalCharacters = NSLocalizedString("Illegal characters", comment: "")
     public static let illegalCharactersBody = NSLocalizedString("Illegal characters Body", comment: "")
     
+    public static let version = NSLocalizedString("Version", comment: "")
+    
     // Alerts
     public static let ok = NSLocalizedString("OK", comment: "")
     public static let cancel = NSLocalizedString("Cancel", comment: "")
@@ -57,4 +59,14 @@ final class LocalizedStrings {
     public static let scanCodeActionTitle = NSLocalizedString("Scan QR Code", comment: "")
     public static let scanCodeActionBody = NSLocalizedString("ScanBody", comment: "")
     public static let scanCodeNavBarTitle = NSLocalizedString("HVV-Qs-Lmj.title", comment: "")
+    
+    // Saving
+    public static let save = NSLocalizedString("Save", comment: "")
+    public static let saved = NSLocalizedString("Saved", comment: "")
+    public static let savedAlertBody = NSLocalizedString("Saved Alert Body", comment: "")
+    public static let enterCodeTitle = NSLocalizedString("Enter a code title", comment: "")
+    public static let enterCodeTitleBody = NSLocalizedString("EnterCodeTitleBody", comment: "")
+    public static let selectLanguageOfSavedCode = NSLocalizedString("LanguageOfSavedCode", comment: "")
+    public static let selectLanguageOfSavedCodeBody = NSLocalizedString("LanguageOfSavedCodeBody", comment: "")
+    public static let title = NSLocalizedString("Title", comment: "")
 }

@@ -15,11 +15,19 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.developer-tools</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Please permit to use of the camera - it is required to scan the QR code.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>We need permission to save QR codes to your gallery.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need permission to save QR codes to your gallery.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -55,8 +63,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>Please permit to use of the camera - it is required to scan the QR code.</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -64,11 +70,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>LSApplicationCategoryType</key>
-	<string>public.app-category.developer-tools</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>We need permission to save QR codes to your gallery.</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>We need permission to save QR codes to your gallery.</string>
 </dict>
 </plist>

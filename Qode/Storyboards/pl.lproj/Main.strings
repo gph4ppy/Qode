@@ -19,3 +19,15 @@
 
 /* Class = "UIButton"; normalTitle = "Settings"; ObjectID = "zuY-Za-Qpz"; */
 "zuY-Za-Qpz.normalTitle" = "Ustawienia";
+
+/* Class = "UIButton"; normalTitle = "Read Code"; ObjectID = "kn9-84-B7C"; */
+"kn9-84-B7C.normalTitle" = "Czytaj Kod";
+
+/* Class = "UIButton"; normalTitle = "Saved Codes"; ObjectID = "JFJ-Fi-iog"; */
+"JFJ-Fi-iog.normalTitle" = "Zapisane Kody";
+
+/* Class = "UINavigationItem"; title = "Read Code"; ObjectID = "DFm-f2-Bue"; */
+"DFm-f2-Bue.title" = "Czytaj Kod";
+
+/* Class = "UINavigationItem"; title = "Saved Codes"; ObjectID = "f6F-GL-lR2"; */
+"f6F-GL-lR2.title" = "Zapisane Kody";

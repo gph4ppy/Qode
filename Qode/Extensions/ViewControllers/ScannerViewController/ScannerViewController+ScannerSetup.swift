@@ -66,5 +66,10 @@ extension ScannerViewController {
         let scannerAreaMask = CGRect(x: x, y: y, width: width, height: height)
         Styling.setMask(with: scannerAreaMask, in: darkOverlay)
     }
+    
+    /// This method changes the text color in the NavigationBar.
+    /// - Parameter color: The UIColor that will be set as the color of the NavigationBar.
+    internal func changeNavBarTitleColor(to color: UIColor) {
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : color]
+    }
 }
-
