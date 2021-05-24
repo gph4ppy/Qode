@@ -44,8 +44,8 @@ Qode currently supports such languages as Polish and English.
 Version 1.1 has arrived, and with it:
 1. New layout.
 2. New Features:
-- A code reader that allows you to read QR codes with a programming code from an image uploaded from the gallery. the highlighted code is displayed below the QR code.
-- Saved codes, i.e. the ability to save QR codes (and their content) in a special section, which can be accessed through the main menu. The codes are saved (at the moment) only on the device that is used.
+-- A code reader that allows you to read QR codes with a programming code from an image uploaded from the gallery. the highlighted code is displayed below the QR code.
+-- Saved codes, i.e. the ability to save QR codes (and their content) in a special section, which can be accessed through the main menu. The codes are saved (at the moment) only on the device that is used.
 3. Changed the color of the title in the scanner view - now it's always white.
 4. New section in the settings - application version.
 - v1.0:\
