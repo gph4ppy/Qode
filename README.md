@@ -37,7 +37,7 @@ Qode currently supports such languages as Polish and English.
 ## Informations
 - The project is ended but will be further developed.
 - Currently, Qode supports such languages as English (U.S.) and Polish). 
-- Please, if you want to use my app, consider buying it on the AppStore. Of course, theoretically, you can build it by yourself by copying the repository and building the app in Xcode, but please, do it only for testing (when you are not sure about buying). Thanks in advance!
+- Please, if you want to use my app, consider buying it on the AppStore.
 
 ## Versions
 ### v1.1:
