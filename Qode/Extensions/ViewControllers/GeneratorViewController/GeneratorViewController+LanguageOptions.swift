@@ -11,13 +11,13 @@ import UIKit
 extension GeneratorViewController {
     /// This method setups the language, thanks to which the code syntax is highlighted.
     /// - Returns: NSAttributedString which will be assigned to TextView
-    @discardableResult internal func setupLanguage() -> NSAttributedString? {
+    @discardableResult func setupLanguage() -> NSAttributedString? {
         textStorage.language = selectedLanguage.capitalizingFirstLetter()
         return highlightr?.highlight(textStorage.string, as: selectedLanguage)
     }
     
     /// This method changes the currently selected language so the code syntax can be highlighted.
-    @objc internal func changeLanguage() {
+    @objc func changeLanguage() {
         let device = UIDevice.current.userInterfaceIdiom
         
         DispatchQueue.main.async {

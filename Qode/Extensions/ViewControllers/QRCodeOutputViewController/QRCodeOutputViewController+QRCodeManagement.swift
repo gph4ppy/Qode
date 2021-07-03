@@ -11,7 +11,7 @@ import CoreImage.CIFilterBuiltins
 // MARK: - QR Code Management
 extension QRCodeOutputViewController {
     /// This opens up the UIActivityViewController which allows sharing the QR code.
-    @objc internal func shareCode() {
+    @objc func shareCode() {
         let child = SpinnerViewController()
         
         // Add the Spinner View Controller

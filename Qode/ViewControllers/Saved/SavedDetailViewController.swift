@@ -14,10 +14,10 @@ final class SavedDetailViewController: UIViewController, UITextViewDelegate {
     @IBOutlet var codeView:             UIView!
     
     // Properties
-    internal let highlightr         = Highlightr()
-    internal let textStorage        = CodeAttributedString()
-    internal let selectedTheme      = UserDefaults.standard.string(forKey: "theme") ?? "paraiso-dark"
-    var savedCode:                  DataToSave?
+    let highlightr                      = Highlightr()
+    let textStorage                     = CodeAttributedString()
+    let selectedTheme                   = UserDefaults.standard.string(forKey: "theme") ?? "paraiso-dark"
+    var savedCode:                      DataToSave?
     
     override func viewDidLoad() {
         super.viewDidLoad()

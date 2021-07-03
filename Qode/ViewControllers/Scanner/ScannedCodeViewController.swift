@@ -13,11 +13,11 @@ final class ScannedCodeViewController: SavingManager {
     @IBOutlet var paddingView:      UIView!
     
     // Properties
-    internal let highlightr         = Highlightr()
-    internal let textStorage        = CodeAttributedString()
-    internal let generator          = QRCodeOutputViewController()
-    internal var selectedLanguage   = UserDefaults.standard.string(forKey: "language") ?? "swift"
-    internal let selectedTheme      = UserDefaults.standard.string(forKey: "theme") ?? "paraiso-dark"
+    let highlightr                  = Highlightr()
+    let textStorage                 = CodeAttributedString()
+    let generator                   = QRCodeOutputViewController()
+    var selectedLanguage            = UserDefaults.standard.string(forKey: "language") ?? "swift"
+    let selectedTheme               = UserDefaults.standard.string(forKey: "theme") ?? "paraiso-dark"
     public var text:                String?
     
     override func viewDidLoad() {

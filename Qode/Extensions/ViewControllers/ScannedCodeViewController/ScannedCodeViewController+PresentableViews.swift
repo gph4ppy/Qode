@@ -10,7 +10,7 @@ import UIKit
 // MARK: - Presentable Views
 extension ScannedCodeViewController {
     /// This method setups the ViewController components.
-    internal func setupView() {
+    func setupView() {
         // Set theme
         textStorage.highlightr.setTheme(to: selectedTheme)
         
@@ -43,7 +43,7 @@ extension ScannedCodeViewController {
     }
     
     /// This method assigns the qr code image and code content to the properties in this superclass.
-    @objc internal func assignAndSave() {
+    @objc func assignAndSave() {
         if let code = self.text {
             qrCode = generator.generateQRCode(from: code)
             codeContent = code

@@ -13,10 +13,10 @@ final class GeneratorViewController: UIViewController, UITextViewDelegate, Alert
     @IBOutlet var paddingView:      UIView!
     
     // Properties
-    internal let highlightr         = Highlightr()
-    internal let textStorage        = CodeAttributedString()
-    internal var selectedLanguage   = UserDefaults.standard.string(forKey: "language") ?? "swift"
-    internal let selectedTheme      = UserDefaults.standard.string(forKey: "theme") ?? "paraiso-dark"
+    let highlightr                  = Highlightr()
+    let textStorage                 = CodeAttributedString()
+    var selectedLanguage            = UserDefaults.standard.string(forKey: "language") ?? "swift"
+    let selectedTheme               = UserDefaults.standard.string(forKey: "theme") ?? "paraiso-dark"
     
     override func viewDidLoad() {
         super.viewDidLoad()

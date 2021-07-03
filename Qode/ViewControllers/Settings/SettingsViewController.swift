@@ -10,12 +10,12 @@ import Highlightr
 
 final class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIColorPickerViewControllerDelegate, AlertPresenter {
     // Properties
-    internal let highlightr             = Highlightr()
-    internal let colorPicker            = UIColorPickerViewController()
-    internal var selectedOption:        SelectedOption!
-    internal let scannerAreaColor       = UserDefaults.standard.colorForKey(key: "scannerColor") ?? .systemYellow
-    internal let accentColor: UIColor   = UserDefaults.standard.colorForKey(key: "accentColor") ?? .link
-    internal var sections               = [SettingsSection]()
+    let highlightr                  = Highlightr()
+    let colorPicker                 = UIColorPickerViewController()
+    var selectedOption:             SelectedOption!
+    let scannerAreaColor            = UserDefaults.standard.colorForKey(key: "scannerColor") ?? .systemYellow
+    let accentColor: UIColor        = UserDefaults.standard.colorForKey(key: "accentColor") ?? .link
+    var sections                    = [SettingsSection]()
     
     // Views
     private let tableView: UITableView = {
@@ -31,7 +31,7 @@ final class SettingsViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     /// This method loads the TableView.
-    internal func loadTableView() {
+    func loadTableView() {
         configure()
         
         view.addSubview(tableView)
@@ -41,7 +41,7 @@ final class SettingsViewController: UIViewController, UITableViewDelegate, UITab
         tableView.dataSource = self
     }
     
-    internal func colorPickerViewControllerDidFinish(_ viewController: UIColorPickerViewController) {
+    func colorPickerViewControllerDidFinish(_ viewController: UIColorPickerViewController) {
         switch selectedOption {
         case .scannerAreaColor:
             UserDefaults.standard.setColor(color: viewController.selectedColor, forKey: "scannerColor")

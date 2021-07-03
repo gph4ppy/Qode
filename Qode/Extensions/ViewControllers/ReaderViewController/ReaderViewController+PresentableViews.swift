@@ -10,7 +10,7 @@ import UIKit
 // MARK: - Presentable Views
 extension ReaderViewController {
     /// This method setups the ViewController components.
-    internal func setupView() {
+    func setupView() {
         // Set theme
         highlightr?.setTheme(to: selectedTheme)
         
@@ -44,7 +44,7 @@ extension ReaderViewController {
     }
     
     /// This method shows the Image Picker Controller.
-    @objc internal func importQRCode() {
+    @objc func importQRCode() {
         DispatchQueue.main.async { [self] in
             picker.delegate = self
             present(picker, animated: true)

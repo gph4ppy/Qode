@@ -1,0 +1,145 @@
+/* 
+  Localizable.strings
+  Qode
+
+  Created by Jakub "GPH4PPY" Dąbrowski on 14/06/2021.
+  
+*/
+
+// MARK: - Menu
+"generate" = "Generate";
+"scan" = "Scan";
+"read" = "Read";
+"saved" = "Saved";
+
+// MARK: - General
+"language" = "Language";
+"characters" = "characters";
+"cancel" = "Cancel";
+"window_title" = "Qode: Developer's QR Codes";
+"welcome_title" = "Welcome to Qode! Choose from the available options in the menu.";
+"select_image" = "Select image";
+
+// MARK: - Saving Alert
+"save" = "Save";
+"share" = "Share";
+"saving_panel" = "Saving Panel";
+"saving_description_1" = "1. Enter your code title.";
+"saving_description_2" = "2. Select the language in which this code has been written.";
+"saved_alert_title" = "Successfully saved";
+"saved_alert_body" = "Your code has been saved.";
+"select_language" = "Select language...";
+"title" = "Title";
+
+// MARK: - Generator
+"generate_code" = "Generate Code";
+
+// MARK: - Scanner
+"scan_code" = "Scan Code";
+"scanned_code" = "Scanned Code";
+"scan_error_title" = "Check your QR Code";
+"scan_error_body" = "Your QR code does not contain the code, it is empty or has been incorrectly scanned. Make sure that:
+- QR code contains code and is not an empty string.
+- The photo taken a moment ago is clear, sharp, unresolved, and the QR code is located in a designated place.
+- You pressed the photo button when the preview was visible on your screen.
+- Your device screen doesn't reflect anything - if so, try to get your device closer to the Mac screen.
+                    
+Scan the code again by pressing the button below. Remember, do not shake your phone and make sure everything is visible correctly.";
+"retake_picture" = "Retake Picture";
+
+// MARK: - Reader
+"read_code" = "Read Code";
+"import" = "Import";
+
+// MARK: - Saved
+"saved_codes" = "Saved Codes";
+"edit" = "Edit";
+"search" = "Search...";
+"your_saved_code" = "Your Saved Code";
+
+// MARK: - Language Alert
+"language_window" = "Language Menu";
+"language_title" = "Select Language";
+"language_body" = "Select the programming language that the code applies to. It is needed to highlight the syntax.";
+
+// MARK: - Errors
+"too_long_code_title" = "Not too much?";
+"too_long_code_body" = "Your QR code can contain a maximum of 2200 characters. Shorten the code or send it in several QR codes.";
+
+"empty_code_title" = "Empty code?";
+"empty_code_body" = "You need to write some code to generate the QR code.";
+
+"illegal_char_title" = "Illegal character?";
+"illegal_char_body" = "Your code cannot contain any illegal characters (you can find the list in the help menu) - remove them and try again.";
+
+// MARK: - Settings
+"appearance" = "Appearance";
+"theme" = "Theme";
+"editor" = "Theme";
+"scanner_area_color" = "Scanner area color";
+
+// MARK: - About
+"about" = "About";
+"about_qode" = "About Qode";
+"about_qode_body" = "Qode is an application that is designed to facilitate the quick submission of code for checking or copying. Everything is closed in the form of a QR code, which after scanning with the application has a highlighted syntax that makes it easier to read the content anywhere, at any time - whether on the bus or in the queue to the store... From now on, it does not matter - Qode users can do everything on their iPhone or iPad, wherever they are!";
+
+// MARK: - Credits
+"credits_title" = "Credits";
+"credits_body" = "The application uses such pods as";
+"highlightr_body" = "Highlightr is an iOS & macOS syntax highlighter built with Swift.
+
+License:
+Copyright (c) 2016 Illanes, Juan Pablo <jpillaness+highlightr@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \"Software\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.";
+
+// MARK: - Illegal Characters (Information)
+"illegal_information_title" = "Illegal characters";
+"illegal_information_body" = "The illegal characters are:
+
+Ⓐⓐ⒜ẠạÅåÄäẢảḀḁẤấẦầẨẩȂȃẪẫẬậẮắẰằẲẳẴẵẶặĀāĄąȀȁǺǻȦȧÁáǞǟǍǎÀàÃãǠǡÂâȺⱥÆæǢǣǼǽⱯꜲꜳꜸꜹꜺꜻⱭ℀⅍℁ª
+Ⓑⓑ⒝ḂḃḄḅḆḇƁɃƀƂƃƄƅℬ
+Ⓒⓒ⒞ḈḉĆćĈĉĊċČčÇçƇƈȻȼℂ℃ƆꜾꜿℭ℅℆℄
+Ⓓⓓ⒟ḊḋḌḍḎḏḐḑḒḓĎďƊƋƌƉĐđȡǱǲǳǄǅǆȸⅅⅆ
+Ⓔⓔ⒠ḔḕḖḗḘḙḚḛḜḝẸẹẺẻẾếẼẽỀềỂểỄễỆệĒēĔĕĖėĘęĚěÈèÉéÊêËëȄȅȨȩȆȇƎⱻɆɇƏǝℰⱸℯ℮€ℇƐ
+Ⓕⓕ⒡ḞḟƑƒꜰℲⅎꟻℱ℻
+Ⓖⓖ⒢ƓḠḡĜĝĞğĠġǤǥǦǧǴℊ⅁ǵĢģ
+Ⓗⓗ⒣ḢḣḤḥḦḧḨḩḪḫĤĥȞȟĦħⱧⱨꜦℍǶẖℏℎℋℌꜧ
+Ⓘⓘ⒤ḬḭḮḯĲĳÍíÌìÎîÏïĨĩĪīĬĭĮįǏǐıƚỺⅈⅉℹℑℐ
+Ⓙⓙ⒥ĴĵɈɉȷⱼǰ
+Ⓚⓚ⒦ḰḱḲḳḴḵĶķƘƙꝀꝁꝂꝃꝄꝅǨǩⱩⱪĸ
+Ⓛⓛ⒧ḶḷḸḹḺḻḼḽĹĺĻļĽľĿŀŁłỈỉⱠⱡȽꝉꝈⱢǇǈǉỊİịꞁ⅃⅂ȈȉȊȋℓℒ
+Ⓜⓜ⒨ḾḿṀṁṂṃꟿꟽⱮƜℳ
+Ⓝⓝ⒩ṄṅṆṇṈṉṊṋŃńŅņŇňǸǹÑñȠƞŊŋƝŉǊǋǌȵℕ№
+Ⓞⓞ⒪ÖöṎṏṌṍṐṑṒṓȪȫȬȭȮȯȰȱǪǫǬǭỌọỎỏỐốỒồỔổỖỗỘộỚớỜờỞởỠỡỢợƠơŌōŎŏŐőÒòÓóÔôÕõǑǒȌȍȎȏŒœØøǾǿꝊꝎꝏ⍥⍤ℴ
+Ⓟⓟ⒫℗ṔṕṖṗƤƥⱣℙǷꟼ℘Ⓠⓠ⒬Ɋɋℚ℺ȹ
+Ⓡⓡ⒭ŔŕŖŗŘřṘṙṚṛṜṝṞṟȐȑȒȓɌɍƦꝚꝛⱤ℞ℜℛ℟ℝ
+Ⓢⓢ⒮ṠṡṢṣṤṥṦṧṨṩŚśŜŝŞşŠšȘșȿꜱƧƨϨϩẞßẛẜẝ℠
+Ⓣⓣ⒯ṪṫṬṭṮṯṰṱŢţŤťŦŧȚțȾⱦƬƮƫƭẗȶ℡™
+Ⓤⓤ⒰ṲṳṴṵṶṷṸṹṺṻỦủỤụỨứỪừỬửỮữỰựŨũŪūŬŭŮůŰűǙǚǗǘǛǜŲųǓǔȔȕÛûȖȗÙùÚúÜüƯưɄƲƱ
+Ⓥⓥ⒱ṼṽṾṿɅ℣Ỽⱱⱴⱽ
+Ⓦⓦ⒲ẀẁẂẃẄẅẆẇẈẉŴŵⱲⱳϢϣẘ
+Ⓧⓧ⒳ẊẋẌẍℵ×
+Ⓨⓨ⒴ẎẏỾỿỲỳỴỵỶỷỸỹŶŷƳƴŸÿÝýɎɏȲȳƔẙ⅄ℽ
+Ⓩⓩ⒵ẐẑẒẓẔẕŹźŻżŽžȤȥⱫⱬƵƶɀℨℤ and emojis.";
+
+// MARK: - Actions
+"cool" = "Cool!";
+"ok" = "OK";
+"thanks" = "Thanks!";

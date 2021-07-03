@@ -1,0 +1,145 @@
+/* 
+  Localizable.strings
+  Qode
+
+  Created by Jakub "GPH4PPY" Dąbrowski on 14/06/2021.
+  
+*/
+
+// MARK: - Menu
+"generate" = "Generuj";
+"scan" = "Skanuj";
+"read" = "Czytaj";
+"saved" = "Zapisane";
+
+// MARK: - General
+"language" = "Język";
+"characters" = "znaków";
+"cancel" = "Anuluj";
+"window_title" = "Qode: Kody QR Programisty";
+"welcome_title" = "Witaj w Qode! Wybierz jedną z dostępnych opcji z menu obok.";
+"select_image" = "Wybierz zdjęcie";
+
+// MARK: - Saving Alert
+"save" = "Zapisz";
+"share" = "Udostępnij";
+"saving_panel" = "Panel Zapisu";
+"saving_description_1" = "1. Wpisz tytuł kodu.";
+"saving_description_2" = "2. Wybierz język, w którym kod został zapisany.";
+"saved_alert_title" = "Pomyślnie zapisano";
+"saved_alert_body" = "Twój kod został zapisany.";
+"select_language" = "Wybierz język...";
+"title" = "Tytuł";
+
+// MARK: - Generator
+"generate_code" = "Generuj Kod";
+
+// MARK: - Scanner
+"scan_code" = "Skanuj Kod";
+"scanned_code" = "Zeskanowany kod";
+"scan_error_title" = "Sprawdź swój kod QR";
+"scan_error_body" = "Twój kod QR nie zawiera kodu, jest pusty lub został nieprawidłowo zeskanowany. Upewnij się, że:
+- Kod QR zawiera kod i nie jest pustym ciągiem znaków.
+- Zdjęcie zrobione przed chwilą jest wyraźne, nierozmazane, w dobrej jakości oraz kod QR jest umieszczony w miejscu do tego przeznaczonym.
+- Wcisnąłeś przycisk wtedy, gdy podgląd był widoczny na ekranie.
+- Twoje urządzenie nie odbija niczego - jeśli tak, spróbuj przybliżyć jego ekran do swojego komputera Mac.
+
+Zeskanuj kod ponownie poprzez wciśnięcie poniższego przycisku. Pamiętaj, nie trzęś telefonem i upewnij się, że wszystko jej widoczne.";
+"retake_picture" = "Wykonaj ponownie zdjęcie";
+
+// MARK: - Reader
+"read_code" = "Czytaj kod";
+"import" = "Importuj";
+
+// MARK: - Saved
+"saved_codes" = "Zapisane Kody";
+"edit" = "Edytuj";
+"search" = "Wyszukaj...";
+"your_saved_code" = "Twój zapisany kod";
+
+// MARK: - Language Alert
+"language_window" = "Menu Języków";
+"language_title" = "Wybierz język";
+"language_body" = "Wybierz język programowania, w którym został napisany ten kod. Dzięki temu możliwe będzie kolorowanie składni.";
+
+// MARK: - Errors
+"too_long_code_title" = "Nie za dużo?";
+"too_long_code_body" = "Twój kod QR może zawierać maksymalnie 2200 znaków. Skróć swój kod lub wyślij go w kilku kodach QR.";
+
+"empty_code_title" = "Pusty kod?";
+"empty_code_body" = "Musisz napisać kod, aby wygenerować kod QR.";
+
+"illegal_char_title" = "Niedozwolone znaki?";
+"illegal_char_body" = "Twój kod nie może zawierać niedozwolonych znaków (listę znajdziesz w menu pomocy) - usuń je i spróbuj ponownie.";
+
+// MARK: - Settings
+"appearance" = "Wygląd";
+"theme" = "Motyw";
+"editor" = "Edytor";
+"scanner_area_color" = "Kolor pola skanowania";
+
+// MARK: - About
+"about" = "Informacje";
+"about_qode" = "O Qode";
+"about_qode_body" = "Qode to aplikacja zaprojektowana w celu ułatwienia szybkiego przesyłania kodu do sprawdzenia lub skopiowania. Cały kod zamknięty jest w postaci QR kodu, który po zeskanowaniu aplikacją zostaje wyświetlony użytkownikowi, wraz z pokolorowaną składnią, ułatwiającą odczytanie treści gdziekolwiek i kiedykolwiek - czy to w autobusie, czy w kolejce do sklepu... Od teraz to nie ma znaczenia - użytkownicy Qode mogą robić wszystko na swoim iPhonie lub iPadzie, gdziekolwiek się znajdują!";
+
+// MARK: - Credits
+"credits_title" = "Uznania";
+"credits_body" = "Aplikacja używa takich podów jak";
+"highlightr_body" = "Highlightr to zbudowany w języku Swift wyróżniacz składni na systemach iOS i macOS.
+
+License:
+Copyright (c) 2016 Illanes, Juan Pablo <jpillaness+highlightr@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \"Software\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.";
+
+// MARK: - Illegal Characters (Information)
+"illegal_information_title" = "Niedozwolone znaki";
+"illegal_information_body" = "Niedozwolonymi znakami są:
+
+Ⓐⓐ⒜ẠạÅåÄäẢảḀḁẤấẦầẨẩȂȃẪẫẬậẮắẰằẲẳẴẵẶặĀāĄąȀȁǺǻȦȧÁáǞǟǍǎÀàÃãǠǡÂâȺⱥÆæǢǣǼǽⱯꜲꜳꜸꜹꜺꜻⱭ℀⅍℁ª
+Ⓑⓑ⒝ḂḃḄḅḆḇƁɃƀƂƃƄƅℬ
+Ⓒⓒ⒞ḈḉĆćĈĉĊċČčÇçƇƈȻȼℂ℃ƆꜾꜿℭ℅℆℄
+Ⓓⓓ⒟ḊḋḌḍḎḏḐḑḒḓĎďƊƋƌƉĐđȡǱǲǳǄǅǆȸⅅⅆ
+Ⓔⓔ⒠ḔḕḖḗḘḙḚḛḜḝẸẹẺẻẾếẼẽỀềỂểỄễỆệĒēĔĕĖėĘęĚěÈèÉéÊêËëȄȅȨȩȆȇƎⱻɆɇƏǝℰⱸℯ℮€ℇƐ
+Ⓕⓕ⒡ḞḟƑƒꜰℲⅎꟻℱ℻
+Ⓖⓖ⒢ƓḠḡĜĝĞğĠġǤǥǦǧǴℊ⅁ǵĢģ
+Ⓗⓗ⒣ḢḣḤḥḦḧḨḩḪḫĤĥȞȟĦħⱧⱨꜦℍǶẖℏℎℋℌꜧ
+Ⓘⓘ⒤ḬḭḮḯĲĳÍíÌìÎîÏïĨĩĪīĬĭĮįǏǐıƚỺⅈⅉℹℑℐ
+Ⓙⓙ⒥ĴĵɈɉȷⱼǰ
+Ⓚⓚ⒦ḰḱḲḳḴḵĶķƘƙꝀꝁꝂꝃꝄꝅǨǩⱩⱪĸ
+Ⓛⓛ⒧ḶḷḸḹḺḻḼḽĹĺĻļĽľĿŀŁłỈỉⱠⱡȽꝉꝈⱢǇǈǉỊİịꞁ⅃⅂ȈȉȊȋℓℒ
+Ⓜⓜ⒨ḾḿṀṁṂṃꟿꟽⱮƜℳ
+Ⓝⓝ⒩ṄṅṆṇṈṉṊṋŃńŅņŇňǸǹÑñȠƞŊŋƝŉǊǋǌȵℕ№
+Ⓞⓞ⒪ÖöṎṏṌṍṐṑṒṓȪȫȬȭȮȯȰȱǪǫǬǭỌọỎỏỐốỒồỔổỖỗỘộỚớỜờỞởỠỡỢợƠơŌōŎŏŐőÒòÓóÔôÕõǑǒȌȍȎȏŒœØøǾǿꝊꝎꝏ⍥⍤ℴ
+Ⓟⓟ⒫℗ṔṕṖṗƤƥⱣℙǷꟼ℘Ⓠⓠ⒬Ɋɋℚ℺ȹ
+Ⓡⓡ⒭ŔŕŖŗŘřṘṙṚṛṜṝṞṟȐȑȒȓɌɍƦꝚꝛⱤ℞ℜℛ℟ℝ
+Ⓢⓢ⒮ṠṡṢṣṤṥṦṧṨṩŚśŜŝŞşŠšȘșȿꜱƧƨϨϩẞßẛẜẝ℠
+Ⓣⓣ⒯ṪṫṬṭṮṯṰṱŢţŤťŦŧȚțȾⱦƬƮƫƭẗȶ℡™
+Ⓤⓤ⒰ṲṳṴṵṶṷṸṹṺṻỦủỤụỨứỪừỬửỮữỰựŨũŪūŬŭŮůŰűǙǚǗǘǛǜŲųǓǔȔȕÛûȖȗÙùÚúÜüƯưɄƲƱ
+Ⓥⓥ⒱ṼṽṾṿɅ℣Ỽⱱⱴⱽ
+Ⓦⓦ⒲ẀẁẂẃẄẅẆẇẈẉŴŵⱲⱳϢϣẘ
+Ⓧⓧ⒳ẊẋẌẍℵ×
+Ⓨⓨ⒴ẎẏỾỿỲỳỴỵỶỷỸỹŶŷƳƴŸÿÝýɎɏȲȳƔẙ⅄ℽ
+Ⓩⓩ⒵ẐẑẒẓẔẕŹźŻżŽžȤȥⱫⱬƵƶɀℨℤ and emojis.";
+
+// MARK: - Actions
+"cool" = "Super!";
+"ok" = "OK";
+"thanks" = "Dziękuję!";

@@ -11,7 +11,7 @@ import UIKit
 extension ReaderViewController {
     /// This method setups the language, thanks to which the code syntax is highlighted.
     /// - Returns: NSAttributedString which will be assigned to TextView
-    @discardableResult internal func setupLanguage() -> NSAttributedString? {
+    @discardableResult func setupLanguage() -> NSAttributedString? {
         if let code = text {
             textStorage.language = selectedLanguage.capitalizingFirstLetter()
             return highlightr?.highlight(code, as: selectedLanguage)
@@ -21,7 +21,7 @@ extension ReaderViewController {
     }
     
     /// This method changes the currently selected language so the code syntax can be highlighted.
-    @objc internal func changeLanguage() {
+    @objc func changeLanguage() {
         let device = UIDevice.current.userInterfaceIdiom
         
         DispatchQueue.main.async {

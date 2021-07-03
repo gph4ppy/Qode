@@ -10,7 +10,7 @@ import UIKit
 // MARK: - Presentable Views
 extension SettingsViewController {
     /// This method configures TableView sections and rows.
-    internal func configure() {
+    func configure() {
         let device = UIDevice.current.userInterfaceIdiom
         
         self.sections = [

@@ -21,7 +21,7 @@ extension SavedDetailViewController {
     }
     
     /// This method setups the ViewController components.
-    internal func setupView() {
+    func setupView() {
         // Set theme
         textStorage.highlightr.setTheme(to: selectedTheme)
         
@@ -56,7 +56,7 @@ extension SavedDetailViewController {
     
     /// This method setups the language, thanks to which the code syntax is highlighted.
     /// - Returns: NSAttributedString which will be assigned to TextView
-    internal func loadCode() -> NSAttributedString? {
+    private func loadCode() -> NSAttributedString? {
         if let savedCode = self.savedCode {
             textStorage.language = savedCode.language.capitalizingFirstLetter()
             return highlightr?.highlight(savedCode.code, as: savedCode.language)

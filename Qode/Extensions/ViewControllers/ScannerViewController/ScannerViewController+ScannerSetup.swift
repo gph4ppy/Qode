@@ -11,7 +11,7 @@ import AVFoundation
 // MARK: - Scanner Setup
 extension ScannerViewController {
     /// This method setups the scanner view
-    internal func setupScanner() {
+    func setupScanner() {
         // Define device
         guard let device = AVCaptureDevice.default(for: .video) else { return }
         
@@ -40,7 +40,7 @@ extension ScannerViewController {
     }
     
     /// This method setups the scannable rectangle area
-    internal func setScannableArea() {
+    func setScannableArea() {
         let scannerAreaColor = UserDefaults.standard.colorForKey(key: "scannerColor") ?? .systemYellow
             
         // Add Rectangle
@@ -69,7 +69,7 @@ extension ScannerViewController {
     
     /// This method changes the text color in the NavigationBar.
     /// - Parameter color: The UIColor that will be set as the color of the NavigationBar.
-    internal func changeNavBarTitleColor(to color: UIColor) {
+    func changeNavBarTitleColor(to color: UIColor) {
         self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : color]
     }
 }

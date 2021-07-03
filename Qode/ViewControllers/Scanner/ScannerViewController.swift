@@ -10,12 +10,12 @@ import AVFoundation
 
 final class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     // Outlets
-    @IBOutlet var scannerAreaSquare:                 UIView!
+    @IBOutlet var scannerAreaSquare:                UIView!
     
     // Properties
-    internal var video: AVCaptureVideoPreviewLayer   = AVCaptureVideoPreviewLayer()
-    internal let session: AVCaptureSession           = AVCaptureSession()
-    internal var darkOverlay: UIView!                = nil
+    var video: AVCaptureVideoPreviewLayer           = AVCaptureVideoPreviewLayer()
+    let session: AVCaptureSession                   = AVCaptureSession()
+    var darkOverlay: UIView!                        = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +56,7 @@ final class ScannerViewController: UIViewController, AVCaptureMetadataOutputObje
     }
     
     // When a QR code is detected, show its text content in ScannedCodeViewController.
-    internal func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         if let object = metadataObjects.first as? AVMetadataMachineReadableCodeObject {
             if object.type == AVMetadataObject.ObjectType.qr {
                 if let vc = storyboard?.instantiateViewController(identifier: "scannedCodeVC") as? ScannedCodeViewController {

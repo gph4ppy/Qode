@@ -10,7 +10,7 @@ import UIKit
 // MARK: - Presentable Views
 extension GeneratorViewController {
     /// This method setups the ViewController components.
-    internal func setupView() {
+    func setupView() {
         // Set theme
         textStorage.highlightr.setTheme(to: selectedTheme)
         
@@ -46,7 +46,7 @@ extension GeneratorViewController {
     }
     
     /// This method shows the ViewController which has a QR code generated.
-    @objc internal func generateQRCode() {
+    @objc func generateQRCode() {
         let code = textStorage.string
         var alert: UIAlertController!
         
