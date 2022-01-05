@@ -7,9 +7,13 @@ Qode is an innovative application that allows you to quickly send and check the 
 
 ## Download
 ![Qode - App Store](https://user-images.githubusercontent.com/41966757/118408099-30775f80-b684-11eb-85bd-7289017caff6.png)
-Qode is available on the AppStore - you can try it out yourself.
-To download it, click on the link below.\
-https://apps.apple.com/us/app/qode-developers-qr-codes/id1567530993
+Qode is available on the AppStore - you can try it out yourself. To buy it, click on the button below.
+
+<p align="center">
+  <a href="https://apps.apple.com/us/app/qode-developers-qr-codes/id1567530993">
+    <img alt="Download on the App Store" title="App Store" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="200">
+  </a>
+</p>
 
 ## Features
 - **Generator**\
